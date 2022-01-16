@@ -3,9 +3,11 @@ package com.bridgelabz.hotelreservationsystem;
 public class Hotel {
 	private String hotelName;
 	private int regularRate;
-	public Hotel(String hotelName, int regularRate) {
+	private int weekendRate;
+	public Hotel(String hotelName, int regularRate, int weekendRate) {
 		this.hotelName = hotelName;
 		this.regularRate = regularRate;
+		this.weekendRate = weekendRate;
 	}
 	public String getHotelName() {
 		return hotelName;
@@ -18,5 +20,11 @@ public class Hotel {
 	}
 	public void setRegularRate(int regularRate) {
 		this.regularRate = regularRate;
+	}
+	public int getWeekendRate() {
+		return weekendRate;
+	}
+	public void setWeekendRate(int weekendRate) {
+		this.weekendRate = weekendRate;
 	}
 }

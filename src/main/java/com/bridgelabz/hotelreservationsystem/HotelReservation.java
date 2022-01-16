@@ -11,9 +11,9 @@ public class HotelReservation {
 	ArrayList<Hotel> hotelList = new ArrayList<>();	
 
 	public void HotelDetails() {
-		hotelList.add(new Hotel("Lakewood", 110));
-		hotelList.add(new Hotel("Bridgewood", 150));
-		hotelList.add(new Hotel("Ridgewood", 220));
+		hotelList.add(new Hotel("Lakewood", 110, 90));
+		hotelList.add(new Hotel("Bridgewood", 150, 50 ));
+		hotelList.add(new Hotel("Ridgewood", 220, 150));
 	}
 
 	// Calculated rate based on period of stay at hotel
