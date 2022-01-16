@@ -2,13 +2,17 @@ package com.bridgelabz.hotelreservationsystem;
 
 public class Hotel {
 	private String hotelName;
+	private int hotelRating;
 	private int regularRate;
 	private int weekendRate;
-	public Hotel(String hotelName, int regularRate, int weekendRate) {
+	
+	public Hotel(String hotelName, int hotelRating, int regularRate, int weekendRate) {
 		this.hotelName = hotelName;
+		this.hotelRating = hotelRating;
 		this.regularRate = regularRate;
 		this.weekendRate = weekendRate;
 	}
+	
 	public String getHotelName() {
 		return hotelName;
 	}
@@ -26,5 +30,11 @@ public class Hotel {
 	}
 	public void setWeekendRate(int weekendRate) {
 		this.weekendRate = weekendRate;
+	}
+	public int getHotelRating() {
+		return hotelRating;
+	}
+	public void setHotelRating(int hotelRating) {
+		this.hotelRating = hotelRating;
 	}
 }

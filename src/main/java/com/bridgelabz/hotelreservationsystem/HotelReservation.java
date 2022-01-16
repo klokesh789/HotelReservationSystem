@@ -7,11 +7,17 @@ import java.util.ArrayList;
 
 public class HotelReservation {
 	ArrayList<Hotel> hotelList = new ArrayList<>();	
+	long minCostLakeWood;
+	long minCostBridgeWood;
+	long minCostRidgeWood;
+	long totalDays;
+	long weekDays;
+	long weekendDays;
 
 	public void HotelDetails() {
-		hotelList.add(new Hotel("Lakewood", 110, 90));
-		hotelList.add(new Hotel("Bridgewood", 150, 50 ));
-		hotelList.add(new Hotel("Ridgewood", 220, 150));
+		hotelList.add(new Hotel("Lakewood", 3, 110, 90));
+		hotelList.add(new Hotel("Bridgewood", 4, 150, 50));
+		hotelList.add(new Hotel("Ridgewood", 5, 220, 150));
 	}
 
 	private static long countWeekDaysMath(LocalDate start, LocalDate stop) {
