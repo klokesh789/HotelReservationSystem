@@ -16,10 +16,11 @@ public class HotelReservationTest {
 	// testing for cheap hotel	
 	@Test
 	public void givenDate_shouldReturn_CheapestHotelNameAndRate() throws Exception {
-		hotelReservation.HotelDetails();		
-		ArrayList<String> hotelNameList = hotelReservation.CheapestHotel("2020-09-10", "2020-09-11");
+		hotelReservation.HotelDetails();
+		
+		ArrayList<String> hotelNameList = hotelReservation.CheapestHotel("2020-09-11", "2020-09-12");
 		Object[] hotelName = hotelNameList.toArray();
-		Object[] arrayExpectedOutput = { "LakeWood", "BridgeWood" };
+		Object[] arrayExpectedOutput = { "LakeWood", "BridgeWood" };		
 		Assert.assertArrayEquals(arrayExpectedOutput, hotelName);
 	}
 	@Test
