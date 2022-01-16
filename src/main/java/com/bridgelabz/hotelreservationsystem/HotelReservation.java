@@ -1,7 +1,8 @@
 package com.bridgelabz.hotelreservationsystem;
 
 public class HotelReservation {
-	HotelRegistrationMethod hotelRegistrationMethod = new HotelRegistrationMethod();
-	HotelRegistrationMethod.addHotel();
+	public static void main(String[] args) {
+		System.out.println("Welcome to Hotel Reservation Program");
 
+	}
 }
